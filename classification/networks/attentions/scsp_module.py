@@ -59,7 +59,7 @@ class scsp_module(nn.Module):
 if __name__ == '__main__':
     x = torch.rand(2, 64, 56, 56)
     print(x)
-    model = scsp_module(64)
+    model = MSCAttention(64)
     y = model(x)
     print(y)
 
